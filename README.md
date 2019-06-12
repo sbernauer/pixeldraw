@@ -1,4 +1,4 @@
-Shoreline
+pixeldraw
 =========
 
 A very fast pixelflut server with full IPv6 support written in C
@@ -14,12 +14,12 @@ A very fast pixelflut server with full IPv6 support written in C
 
 On \*buntu/Debian distros use `sudo apt install git build-essential libsdl2-dev libpthread-stubs0-dev libvncserver-dev libnuma-dev` to install the dependencies.
 
-Use ```make``` to build shoreline
+Use ```make``` to build pixeldraw
 
 
 # Usage
 
-By default Shoreline runs in headless mode. In headless mode all user frontends are disabled. Use ```shoreline -f sdl``` to get a sdl window for drawing
+By default pixeldraw runs in headless mode. In headless mode all user frontends are disabled. Use ```pixeldraw -f sdl``` to get a sdl window for drawing
 
 There are a few more commandline switches:
 
@@ -40,13 +40,13 @@ There are a few more commandline switches:
 When specifying a frontend frontend-specific options may be passed to the frontend. For example the VNC frontend can be configured
 to use a nonstandard port:
 
-`shoreline -f vnc,port=2342`
+`pixeldraw -f vnc,port=2342`
 
-All available frontends and their options can be listed using `shoreline -f ?`.
+All available frontends and their options can be listed using `pixeldraw -f ?`.
 
 # Performance
 
-Shoreline can easily handle full 10G line speed traffic on half way decent hardware (i7-6700, 32 GB dual channel DDR4 memory @2400 MHz)
+pixeldraw can easily handle full 10G line speed traffic on half way decent hardware (i7-6700, 32 GB dual channel DDR4 memory @2400 MHz)
 
 On more beefy hardware (2x AMD EPYC 7821, 10x 8GB DDR4 ECC memory @2666 MHz, 6 memory channels) we are at about 37 Gbit/s
 

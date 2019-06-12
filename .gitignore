@@ -3,7 +3,7 @@
 *.elf
 *.so
 .gdb_history
-shoreline
+pixeldraw
 *.data
 *.s
 *.old
